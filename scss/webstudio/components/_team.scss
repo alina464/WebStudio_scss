@@ -1,0 +1,76 @@
+@import "/scss/utils/mixins";
+@import "/scss/utils/placeholders";
+@import "/scss/utils/variables";
+.team-item {
+    background-color: $background-text-color;
+    text-align: center;
+}
+.team-name
+{
+    color: $text-color;
+    font-family:Roboto;
+    font-size: 16px;
+    letter-spacing: 3%;
+    font-weight: 500;
+    padding-top: 30px;
+}
+.team-role {
+    color: $little-text-color;
+    font-weight: normal;
+    font-family: Roboto;
+    font-size: 16px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.team-list {
+    list-style: none;
+    padding-top: 50px;
+    padding-bottom: 94px;
+    display: flex;
+    margin: 0px;
+    gap: 30px;
+    padding-left: 0px;
+}
+.team-title {
+    padding-top: 94px;
+    text-align: center;
+    margin: 0px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42.19px;
+    letter-spacing: 0.03em;
+}
+.team {
+    background-color: $light-gray;
+}
+.team-item {
+    box-shadow: 0.3px 2px 2.5px -1.2px $little-text-color,
+    -0.3px 2px 2.5px -1.2px $little-text-color;
+}
+.team-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 0px 32px 42px 32px;
+}
+.team-icon-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+.team-icon-div:hover {
+    background-color: $decor-color;
+    transform: scale(1.1);
+    border-radius: 50%;
+}
+.team-icon-div {
+    color: #AFB1B8; 
+}
+.team-icon-div:hover {
+    color: $background-text-color;
+}

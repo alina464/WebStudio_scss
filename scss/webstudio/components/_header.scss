@@ -1,0 +1,192 @@
+@import "/scss/utils/mixins";
+@import "/scss/utils/placeholders";
+@import "/scss/utils/variables";
+.web {
+    color: $decor-color;
+    font-size: 26px;
+    font-family: 'Raleway';
+    font-weight: bold;
+    padding-top: 60px;
+
+}
+.studio {
+    color: $background-text-color;
+    font-size: 26px;
+    font-family: 'Raleway';
+    font-weight: bold;
+    padding-top: 60px;
+}
+.header-logo {
+    list-style: none;
+    display: flex;
+    font-family: 'Raleway';
+    font-weight: bold;
+
+    &-text {
+    color: $text-color;
+    font-size: 26px;
+    font-family: 'Raleway';
+    font-weight: bold;
+    padding: 24px 0px 25px 0px;
+}
+}
+.header-nav {
+    list-style: none;
+    display: flex;
+
+    &-link {
+    font-family: 'Roboto';
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+
+        &:hover {
+        color: $decor-color;
+        }
+    }
+}
+.header-contact {
+    list-style: none;
+    display: flex;
+
+    &-link {
+    color: $little-text-color;
+    font-family: Roboto;
+    text-decoration: none;
+    font-weight: 500;
+
+        &:hover {
+        color: $decor-color;
+        }
+    }
+}
+.nav-site {
+    display: flex;
+    gap: 200px;
+}
+.header {
+    display: flex;
+
+    &-list {
+    padding-left: 93px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    }
+
+    &-list-2 {
+        margin: 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    }
+}
+header {
+    border-bottom: 1px solid #ccc;
+}
+.header-contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.header-contact {
+    color: $little-text-color; 
+}
+.header-contact:hover {
+    color: $decor-color;
+}
+.header-contact-link {
+    text-decoration: none;
+    color: inherit;
+}
+.third {
+    position: relative;
+    display: inline-block;
+    padding: 30px 0 28px;
+    width: 72px;
+    overflow: hidden;
+}
+.third::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background-color: $decor-color;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+  }
+.third:hover::after {
+    transform: scaleX(1);
+} 
+.first:hover::after {
+    transform: scaleX(1)
+ } 
+.first {
+    position: relative;
+    display: inline-block;
+    padding: 30px 0 28px;
+    width: 48px;
+    overflow: hidden;
+}
+.first::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background-color: $decor-color;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+.second:hover::after {
+    transform: scaleX(1)
+ } 
+.second {
+    position: relative;
+    display: inline-block;
+    padding: 30px 0 28px;
+    width: 80px;
+    overflow: hidden;
+}
+.second::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background-color: $decor-color;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+ .header-list {
+    position: relative;
+}
+.st {
+    color: $decor-color;
+} 
+.pr {
+    color: $decor-color;
+}
+.st {
+    border-bottom: 4px solid $decor-color;
+    padding-bottom: 24px;
+    padding-top: 30px;
+    width: 48px;
+}
+.pr {
+    border-bottom: 4px solid $decor-color;
+    padding-bottom: 24px;
+    padding-top: 30px;
+    width: 72px;
+}

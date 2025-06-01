@@ -1,0 +1,82 @@
+@import "/scss/utils/mixins";
+@import "/scss/utils/placeholders";
+@import "/scss/utils/variables";
+.main-gallery-title {
+    @include text($font-weight: 700, $font-height: 42.19px);
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.main-gallery-list {
+    list-style: none;
+    padding-top: 50px;
+    padding-bottom: 94px;
+    display: flex;
+    margin: 0px;
+    gap: 30px;
+    padding-left: 0px;
+}
+.main-gallery-title {
+    text-align: center;
+}
+.main-gallery-box1 {
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    height: 70px;
+    @include text($font-weight: 700, $font-height: 100%);
+    font-size: 14px;
+    letter-spacing: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: $background-text-color;
+    opacity: 0.93;
+    position: absolute;
+    top: 210px;
+    z-index: 2;
+}
+.main-gallery-item {
+    width: 370px;
+    position: relative;
+    z-index: 1;
+}
+.main-gallery-box2 {
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    height: 70px;
+    @include text($font-weight: 700, $font-height: 100%);
+    font-size: 14px;
+    letter-spacing: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: $background-text-color;
+    opacity: 0.93;
+    position: absolute;
+    top: 210px;
+    z-index: 2;
+}
+.main-gallery-box3 {
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    height: 70px;
+    @include text($font-weight: 700, $font-height: 100%);
+    font-size: 14px;
+    letter-spacing: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: $background-text-color;
+    opacity: 0.93;
+    position: absolute;
+    top: 210px;
+    z-index: 2;
+}
