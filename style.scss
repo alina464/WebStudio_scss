@@ -1,0 +1,30 @@
+@import './scss/utils/mixins';
+@import './scss/utils/placeholders';
+@import './scss/utils/variables';
+@import './scss/portfolio/components/footer';
+@import './scss/portfolio/components/header';
+@import './scss/portfolio/components/portfolio';
+@import './scss/webstudio/components/footer';
+@import './scss/webstudio/components/gallery';
+@import './scss/webstudio/components/header';
+@import './scss/webstudio/components/hero';
+@import './scss/webstudio/components/partners';
+@import './scss/webstudio/components/services';
+@import './scss/webstudio/components/team';
+h1 {
+    font-size: 44px;
+    color:var(--white);
+    text-align: center;
+    margin: 0px;
+    letter-spacing: 6%;
+    line-height: 60px;
+}
+body 
+{
+    font-family: 'Roboto';
+}
+.container {
+    width: 1206px;
+    margin: 0 auto;
+    padding: 0 15px;
+}

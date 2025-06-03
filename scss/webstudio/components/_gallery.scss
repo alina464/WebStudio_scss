@@ -1,6 +1,4 @@
-@import "/scss/utils/mixins";
-@import "/scss/utils/placeholders";
-@import "/scss/utils/variables";
+
 .main-gallery-title {
     @include text($font-weight: 700, $font-height: 42.19px);
     font-size: 36px;

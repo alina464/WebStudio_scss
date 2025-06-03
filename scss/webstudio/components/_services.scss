@@ -1,6 +1,4 @@
-@import "/scss/utils/mixins";
-@import "/scss/utils/placeholders";
-@import "/scss/utils/variables";
+
 .main-services-list {
     display: flex;
     list-style:none;
@@ -26,7 +24,7 @@
     font-size: 14px;
 }
 .main-services-item-first::before {
-    background-image: url(./img/antenna1.svg);
+    background-image: url(/img/antenna1.svg);
     content: '';
     width: 270px;
     height: 120px;
@@ -37,7 +35,7 @@
     margin-bottom: 30px;
 }
 .main-services-item-second::before {
-    background-image: url(./img/clock.svg);
+    background-image: url(/img/clock.svg);
     content: '';
     width: 270px;
     height: 120px;
@@ -48,7 +46,7 @@
     margin-bottom: 30px;
 }
 .main-services-item-third::before {
-    background-image: url(./img/diagram.svg);
+    background-image: url(/img/diagram.svg);
     content: '';
     width: 270px;
     height: 120px;
@@ -59,7 +57,7 @@
     margin-bottom: 30px;
 }
 .main-services-item-forth::before {
-    background-image: url(./img/astronaut.svg);
+    background-image: url(/img/astronaut.svg);
     content: '';
     width: 270px;
     height: 120px;
