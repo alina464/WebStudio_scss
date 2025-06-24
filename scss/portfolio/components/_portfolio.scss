@@ -114,3 +114,15 @@
     z-index: 5;
     position: relative;
 }
+@media (max-width: 768px) {
+    .main-nav {
+        flex-wrap: wrap;
+        justify-content: left;
+        gap: 5px;
+    }
+}
+@media (max-width: 450px) {
+    .portfolio-list {
+        justify-content: center;
+    }
+}

@@ -30,6 +30,7 @@
     border-radius: 5px ;
     transform: translate(-50%, 100%);
     transition: all ease-in-out 1s;
+    
 }
 .backdrop:not(.is-hidden) .modal {
     @extend %modal-animation;
@@ -56,13 +57,8 @@
 .modal-comment {
     height: 120px;
 }
-.main-banner {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./img/backgroundmain.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
 .banner {
-    padding: 200px 237px 200px 237px ;
+    // padding: 200px 237px 200px 237px ;
     display: flex;
     flex-direction: column; 
     align-items: center; 
@@ -175,18 +171,80 @@
     @include text($font-weight: 700, $font-height: 30px);
     font-size: 16px;
     letter-spacing: 6%;
-    text-align: center;
     margin-top: 30px;
+}
+.div-btn-open {
+    display: flex;
+    justify-content: center;
 }
 .main-banner {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/backgroundmain.png);
     background-repeat: no-repeat;
     background-position: center;
+    min-height: 400px;
+    width: 100%;
+    background-size: cover;
 }
 .banner {
-    padding: 200px 237px 200px 237px ;
     display: flex;
     flex-direction: column; 
     align-items: center; 
     justify-content: center;
 }
+.main-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // height: 500px;
+
+}
+.main-banner-title {
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
+    letter-spacing: 6%;
+    text-transform: uppercase;
+    color: $background-text-color;;
+    max-width: 360px;
+}
+@media (max-width: 768px) {
+    .modal-section {
+        height: 609px;
+        width: 450px;
+    }
+    .modal-form {
+        width: 370px;
+    }
+    .modal-comment {
+        width: 370px;
+    }
+    .form-person  {
+        top: 120px;
+    }
+    .form-phone{
+        top: 185px;
+    }
+    .form-mail{
+        top: 250px;
+    }
+    .btn-close {
+        left: 410px;
+    }
+    .modal-form-end-text, .modal-form-end-link {
+        font-size: 12px;
+    }
+}
+.modal-form, .modal-comment {
+    border: 1px solid gray;
+    outline: none;
+}
+.modal-form:focus {
+    border-color: $decor-color;
+    caret-color: $decor-color; 
+}
+.modal-comment:focus {
+    border-color: $decor-color;
+    caret-color: $decor-color; 
+}
+

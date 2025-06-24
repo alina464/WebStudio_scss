@@ -22,9 +22,29 @@ h1 {
 body 
 {
     font-family: 'Roboto';
+    width: 100vw;
 }
 .container {
-    width: 1206px;
+    max-width: 1206px;
     margin: 0 auto;
     padding: 0 15px;
 }
+.container.header {
+    max-width: 1206px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+// @media (max-width: 768px) {
+//     .container {
+//         width: 768px;
+//         margin: 0 auto;
+//         padding: 0 15px;
+//     }
+// }
+// @media (min-width: 0px) and (max-width: 450px) {
+//     .container {
+//         width: 450px;
+//         margin: 0 auto;
+//         padding: 0 15px;
+//     }
+// }

@@ -45,20 +45,22 @@
     </header>
     <main>
         <section class="main-banner">
-            <div class="container">
-                <div class="banner">
-                    <h1 class="main-banner-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-
+            <div class="container">             
+                <h1 class="main-banner-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
+                <div class="div-btn-open">
                     <button class="btn-open" data-open-modal>Замовити послугу</button>
+                </div>
                     <div class="backdrop is-hidden" data-modal>
                         <div class="modal">
                             <div class="modal-section">
                                 <button class="btn-close" data-close-modal>x</button>
                                 <h3 class="modal-title">Залиште свої дані, ми вам передзвонимо</h3>
                                 <p class="modal-form-must">Ім'я</p>
-                                <svg class="form-person" height="12px" width="12px">
-                                    <use href="./symboldefts.svg#form-person"></use>
-                                </svg>
+                                <label for="username">
+                                    <svg class="form-person" height="12px" width="12px">
+                                        <use href="./symboldefts.svg#form-person"></use>
+                                    </svg>
+                                </label>
                                 <input type="text" class="modal-form">
                                 <p class="modal-form-must">Телефон</p>
                                 <svg class="form-phone" height="13px" width="13px">
@@ -82,26 +84,24 @@
                             </div>
                         </div>
                     </div>
-
-                </div>
             </div>
         </section>
         <div class="container"> 
             <section class="main-services">
                 <ul class="main-services-list">
-                    <li class="main-services-item-first">
+                    <li class="main-services-item antenna">
                         <h3 class="main-services-title">УВАГА ДО ДЕТАЛЕЙ</h3>
                         <p class="main-services-description">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
                     </li>
-                    <li class="main-services-item-second">
+                    <li class="main-services-item clock">
                         <h3 class="main-services-title">ПУНКТУАЛЬНІСТЬ</h3>
                         <p class="main-services-description">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
                     </li>
-                    <li class="main-services-item-third">
+                    <li class="main-services-item diagramm">
                         <h3 class="main-services-title">ПЛАНУВАННЯ</h3>
                         <p class="main-services-description">Так само консультація з широким активом значною мірою зумовлює.</p>
                     </li>
-                    <li class="main-services-item-forth">
+                    <li class="main-services-item astronaut">
                         <h3 class="main-services-title">СУЧАСНІ ТЕХНОЛОГІІЇ</h3>
                         <p class="main-services-description">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                     </li>
@@ -130,7 +130,7 @@
                     <h2 class="team-title">Наша команда</h2>
                     <ul class="team-list">
                         <li class="team-item">
-                            <img class="team-image" src="./img/productdesigner1.jpg" alt="Ігор Дем'яненко - Product Designer" height="260" width="270">
+                            <img class="team-item-image" src="./img/productdesigner.jpg" alt="Ігор Дем'яненко - Product Designer">
                             <h5 class="team-name">Ігор Дем'яненко</h5>
                             <p class="team-role">Product Designer</p>
                             <div class="team-icons">
@@ -157,7 +157,7 @@
                             </div>
                         </li>
                         <li class="team-item">
-                            <img class="team-image" src="./img/frontenddeveloper1.jpg" alt="Ольга Рєпіна - Frontend Developer" height="260" width="270">
+                            <img class="team-item-image" src="./img/frontenddeveloper.jpg" alt="Ольга Рєпіна - Frontend Developer">
                             <h5 class="team-name">Ольга Рєпіна</h5>
                             <p class="team-role">Frontend Developer</p>
                             <div class="team-icons">
@@ -184,7 +184,7 @@
                             </div>
                         </li>
                         <li class="team-item">
-                            <img class="team-image" src="./img/marketingworker.jpg" alt="Микола Тарасов - Marketing" height="260" width="270">
+                            <img class="team-item-image" src="./img/marketingworker.jpg" alt="Микола Тарасов - Marketing">
                             <h5 class="team-name">Микола Тарасов</h5>
                             <p class="team-role">Marketing</p>
                             <div class="team-icons">
@@ -211,7 +211,7 @@
                             </div>
                         </li>
                         <li class="team-item">
-                            <img class="team-image" src="./img/uidesigner1.jpg" alt="Михайло Єрмаков - UI Designer" height="260" width="270">
+                            <img class="team-item-image" src="./img/uidesigner.jpg" alt="Михайло Єрмаков - UI Designer">
                             <h5 class="team-name">Михайло Єрмаков</h5>
                             <p class="team-role">UI Designer</p>
                             <div class="team-icons">
@@ -243,7 +243,7 @@
             <section class="partners">
                 <div class="container">
                     <h2 class="team-title">Постійні клієнти</h2>
-                    <div class="partners-icons">
+                    <div class="partners-icon">
                         <div class="partners-icon-border">
                             <svg class="partners-icon-item" height="60px" width="106px">
                                 <use href="./symboldefts.svg#client-1"></use>
@@ -314,14 +314,16 @@
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div class="footer-subscribe">
                         <p class="footer-form-text">Підпишіться на розсилку</p>
                         <div class="footer-div-icon">
                             <input type="email" placeholder="E-mail" class="footer-form-input">
-                            <button class="footer-form-button">Підписатися</button>
-                            <svg class="footer-form-icon" height="24px" width="24px">
+                            <button class="footer-form-button">Підписатися
+                                <svg class="footer-form-icon" height="24px" width="24px">
                                 <use href="./symboldefts.svg#telegram"></use>
                             </svg>
+                            </button>
+                            
                         </div>
                     </div>
                 </div>
