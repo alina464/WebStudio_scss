@@ -5,7 +5,7 @@
 }
 
 .modal-form-must, .modal-comment {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 12px;
   line-height: 100%;
@@ -165,6 +165,10 @@
 
 .footer-form-icon {
   margin-left: 12px;
+}
+
+.second, .first, .third {
+  width: 300px;
 }
 
 .main-portfolio {
@@ -813,8 +817,12 @@ header {
 .header-contact-link {
   text-decoration: none;
   color: inherit;
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
+}
+
+.social-links {
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -844,20 +852,122 @@ header {
     font-size: 24px;
   }
 }
+.header-burger_btn {
+  display: none;
+}
+
+.header-close_btn {
+  display: none;
+}
+
+@media (max-width: 450px) {
+  .header-close_btn {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 30px;
+    align-self: flex-end;
+    margin-bottom: 20px;
+  }
+}
 @media (max-width: 565px) {
   .header-contact-link {
     display: none;
   }
 }
 @media (max-width: 450px) {
-  .nav-site {
-    display: none;
-  }
   .header-logo-text {
     font-size: 24px;
   }
   .web {
     font-size: 24px;
+  }
+  .nav-site {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px 15px;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .header-contact-link {
+    display: block;
+  }
+  .header-nav-link {
+    border: none;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 2%;
+  }
+  .second, .st, .third {
+    width: 300px;
+  }
+  .header.open .nav-site {
+    display: flex;
+    opacity: 1;
+    pointer-events: all;
+  }
+  .header-burger_btn {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 30px;
+  }
+  .header-close_btn {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 30px;
+    align-self: flex-end;
+    margin-bottom: 20px;
+  }
+  .header-list {
+    flex-direction: column;
+    gap: 35.71px;
+  }
+  .header-list-2 {
+    flex-direction: column-reverse;
+    gap: 32px;
+    margin-top: 200px;
+  }
+  .burger-number {
+    font-size: 34px;
+    color: rgb(33, 150, 243);
+  }
+  .burger-mail {
+    font-size: 24px;
+  }
+  .burger-symbol {
+    display: none;
+  }
+  .social-links {
+    display: flex;
+    gap: 10px;
+    color: rgba(33, 33, 33, 0.2);
+    font-weight: 500;
+    font-family: "Roboto";
+    font-size: 18px;
+    letter-spacing: 2%;
+    font-family: "Roboto";
+    font-weight: 500;
+    line-height: 22;
+    margin-top: 64px;
+    line-height: 2px;
+  }
+  .social-links a {
+    text-decoration: none;
+    color: rgb(33, 150, 243);
   }
 }
 .backdrop {
