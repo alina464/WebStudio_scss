@@ -1002,10 +1002,6 @@ header {
   transition: all ease-in-out 1s;
 }
 
-/* .modal.show {
-    transform: translate(-50%, -50%);
-    opacity: 1;
-} */
 .modal-section {
   width: 528px;
   height: 551px;
